@@ -1,17 +1,27 @@
+# 🔐 Brute Force Detection & Automated Response
 
-# 🔐 Brute Force Detection & IP Blocking Lab
+> Detecting and blocking SSH brute-force attacks using Python and iptables
 
-## 🧠 What this lab is about
+![Python](https://img.shields.io/badge/Python-3.x-blue)
+![Linux](https://img.shields.io/badge/Platform-Linux-green)
+![Security](https://img.shields.io/badge/Domain-Cybersecurity-red)
 
-Instead of just reading theory about brute-force attacks, I wanted to **see it happen, detect it, and stop it**.
+## 🧠 Overview
 
-So in this lab, I simulated repeated failed login attempts and then built a simple detection + response system using:
+This project demonstrates how a brute-force attack against an SSH service can be detected and mitigated using log analysis and automated response.
 
-* Linux logs
-* Python (regex parsing)
-* Firewall rules (iptables)
+A simulated attacker repeatedly attempts failed logins, generating authentication logs on the target system. A Python-based detection script monitors these logs, identifies suspicious patterns, and extracts the attacker’s IP address.
 
-End result → **detect attacker → block attacker automatically**
+Once a predefined threshold is reached, the system automatically blocks the attacker using firewall rules (iptables), effectively stopping further access.
+
+This workflow reflects a simplified real-world security process:
+
+**Attack → Detection → Response**
+
+Technologies used:
+- Linux authentication logs (`/var/log/auth.log`)
+- Python (regex-based parsing)
+- iptables (firewall enforcement)
 
 ---
 
@@ -185,17 +195,22 @@ To verify:
 ✔️ Blocking worked again
 
 ---
-## 📸 Screenshots
+## 📸 Attack → Detection → Response
 
-### 🔴 Attack (Brute Force)
-![Attack](lab1.png)
+<p align="center">
+  <img src="lab1.png" width="700"/>
+  <br><b>Brute-force attack generating failed login attempts</b>
+</p>
 
-### 🟡 Detection & Response
-![Detection](lab2.png)
+<p align="center">
+  <img src="lab2.png" width="700"/>
+  <br><b>Detection script identifies attacker and triggers block</b>
+</p>
 
-### 🟢 Blocking Result
-![Blocking](lab3.png)
-
+<p align="center">
+  <img src="lab3.png" width="700"/>
+  <br><b>Attacker blocked — connection timed out</b>
+</p>
 ---
 
 ## 📊 What I Observed
