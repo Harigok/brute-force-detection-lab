@@ -188,13 +188,13 @@ To verify:
 ## 📸 Screenshots
 
 ### 🔴 Attack (Brute Force)
-![Attack](screenshots/lab1.png)
+![Attack](lab1.png)
 
 ### 🟡 Detection & Response
-![Detection](screenshots/lab2.png)
+![Detection](lab2.png)
 
 ### 🟢 Blocking Result
-![Blocking](screenshots/lab3.png)
+![Blocking](lab3.png)
 
 ---
 
