@@ -185,6 +185,18 @@ To verify:
 ✔️ Blocking worked again
 
 ---
+## 📸 Screenshots
+
+### 🔴 Attack (Brute Force)
+![Attack](screenshots/lab1.png)
+
+### 🟡 Detection & Response
+![Detection](screenshots/lab2.png)
+
+### 🟢 Blocking Result
+![Blocking](screenshots/lab3.png)
+
+---
 
 ## 📊 What I Observed
 
