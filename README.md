@@ -266,16 +266,27 @@ Not theory — actual working flow.
 
 ## ▶️ How to Run
 
+### 1. Clone the repository
+
 ```bash
-sudo python3 script.py
+git clone https://github.com/Harigok/brute-force-detection-lab.git
+cd brute-force-detection-lab
+````
+
+### 2. Run the script
+
+```bash
+sudo python3 bruteforce_detector.py
 ```
 
-Make sure:
+### 3. Requirements
 
-* `/var/log/auth.log` exists
-* You have sudo privileges
-* iptables is installed
+* SSH service must be running
+* Logs available at `/var/log/auth.log`
+* You must have sudo privileges
 
----
+```
+
+
 
 
